@@ -13,19 +13,19 @@ APP_ID = int(os.environ.get("APP_ID", "19863702"))
 API_HASH = os.environ.get("API_HASH", "6d48cb362a97a43cfc944fd5c0f917f9")
 
 # Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002280990808"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7604092691"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7512463676"))
 
 # Port
-PORT = os.environ.get("PORT", "8111")
+PORT = os.environ.get("PORT", "8121")
 
 # Database URL
-DB_URI = os.environ.get("DATABASE_URL", "")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Premium:aloksingh@cluster0.4ykpo.mongodb.net/?retryWrites=true&w=majority")
 
 # Database Name
-DB_NAME = os.environ.get("DATABASE_NAME", "")
+DB_NAME = os.environ.get("DATABASE_NAME", "Free")
 
 # Join Requests Database
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DB_URI)
@@ -45,7 +45,7 @@ START_MSG = os.environ.get("START_MESSAGE", "<b>𝙷𝚎𝚕𝚕𝚘 {first}\n\n
 # Admins list
 try:
     ADMINS = [7533047591]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "7350721166").split()):
         ADMINS.append(int(x))
 except ValueError:
     raise Exception("Your Admins list does not contain valid integers.")

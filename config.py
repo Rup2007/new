@@ -28,8 +28,8 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://userdat730:YwtGoLTTqKa5Ae
 DB_NAME = os.environ.get("DATABASE_NAME", "insta")
 
 # Join Requests Database
-JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DB_URI)
-JOIN_REQS_DB2 = environ.get("JOIN_REQS_DB2", DB_URI)
+JOIN_REQS_DB = environ.get("JOIN_REQS_DB", "mongodb+srv://userdat730:YwtGoLTTqKa5Ae0w@cluster0.tbfsfdv.mongodb.net/insta?retryWrites=true&w=majority&appName=Cluster0")
+JOIN_REQS_DB2 = environ.get("JOIN_REQS_DB2", "mongodb+srv://userdat730:YwtGoLTTqKa5Ae0w@cluster0.tbfsfdv.mongodb.net/insta?retryWrites=true&w=majority&appName=Cluster0")
 
 # Force sub channel id, if you want to enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002717640985"))
